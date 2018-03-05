@@ -35,7 +35,7 @@ window=rg.TurtleWindow()
 toto = rg.SimpleTurtle('turtle')
 toto.pen = rg.Pen('red',1)
 for k in range(5):
-    toto.left(40)
+    toto.left(45)
     toto.forward(100)
 window.close_on_mouse_click()
 
