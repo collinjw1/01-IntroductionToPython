@@ -54,7 +54,7 @@ blue_turtle.speed = 20  # Fast
 size = 300
 
 # Do the indented code 13 times.  Each time draws a square.
-for k in range(13):
+for k in range(20):
 
     # Put the pen down, then draw a square of the given size:
     blue_turtle.draw_square(size)
@@ -64,7 +64,7 @@ for k in range(13):
     blue_turtle.pen_up()
     blue_turtle.right(45)
     blue_turtle.forward(10)
-    blue_turtle.left(45)
+    blue_turtle.left(45+2*k)
 
     # Put the pen down again (so drawing resumes).
     # Make the size for the NEXT square be 12 pixels smaller.
