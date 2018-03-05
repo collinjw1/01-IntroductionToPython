@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Jonathan Collins.
 """
 ###############################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# Done: 2.
 #   You should have RUN the  m4e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -27,3 +27,30 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+
+africa = rg.SimpleTurtle('turtle')
+africa.speed = 10
+africa.pen = rg.Pen('green',3)
+holdtheline = rg.SimpleTurtle('turtle')
+holdtheline.speed = 10
+holdtheline.pen = rg.Pen('blue',3)
+
+africa.left(75)
+holdtheline.right(75)
+
+for k in range(4):
+    africa.forward(100)
+    africa.right(150)
+    africa.forward(200)
+    africa.left(150)
+    africa.forward(100)
+    holdtheline.forward(100)
+    holdtheline.left(150)
+    holdtheline.forward(200)
+    holdtheline.right(150)
+    holdtheline.forward(100)
+window.close_on_mouse_click()
